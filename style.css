@@ -16,4 +16,12 @@ body
     font-size: 20PX;
     margin-top: 10px;
 }
+footer
+{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+footer a{
+    margin-top: 10px;
+}
 
