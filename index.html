@@ -8,53 +8,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+<!--image-->
+  <div class="container" >
+    <center><img src="download.png" alt="" style="margin-top: 50px; height: 72px; width: 72px;"></center>
+  </div>
+   <!--first section-->
+  <div class="first section">
+  <center><h1>Checkout form</h1></center>
+  <center><p class="justify-text">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a <br>validation state that can be triggered by attempting to submit the form without completing it.</p></center>
+</div>
+ <!--end first section-->
+ <!--form start-->
+     <div class="container">    
+  <div class="right">
+    <h3 >Your cart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     3</h3>
     <div class="card" style="width: 18rem;">
       <ul class="list-group list-group-flush">
     <li class="list-group-item">
-      <h5>Product name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $12<br>
+      <h5>Product name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $12<br>
       <small> Brief description</small> </h5>
       </li>
     <li class="list-group-item">
-      <h5>Second product &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $8<br>
+      <h5>Second product &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $8<br>
       <small>  Brief description</small> </h5>
       </li>
     <li class="list-group-item">
-      <h5>Third item &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $5<br>
+      <h5>Third item &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $5<br>
       <small>  Brief description </small> </h5>
       </li>
     <li class="list-group-item" style="color:green ;">
-      <h5>Promo code &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -$5<br>
+      <h5>Promo code &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -$5<br>
         <smal>EXAMPLECODE</small> 
         </h5>
       </li>
     <li class="list-group-item">
-      <h5>Total (USD) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$20
+      <h5>Total (USD) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$20
       </h5>
     </li>
-    <li class="list-group-item" style="margin-top: 10px;"></li>
-  
-</ul>
-</div>
-</div>
-    <!--navbar start-->
-    <!-- Just an image -->
-    <div class="container" >
-      <center><img src="download.png" alt="" style="margin-top: 50px; height: 72px; width: 72px;"></center>
+  </ul>
+</div>  
+  <div class="input-group flex-nowrap" style="margin-top: 20px;">
+    <div class="input-group-prepend">
+      <input type="text" class="form-control" placeholder="Promo Code" aria-label="Username" aria-describedby="addon-wrapping">
+      <span class="input-group-text" id="addon-wrapping">Redeem</span>
     </div>
-     <!--navbar end-->
-     <!--first section-->
-    <div class="first section">
-    <center><h1>Checkout form</h1></center>
-    <center><p class="justify-text">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a <br>validation state that can be triggered by attempting to submit the form without completing it.</p></center>
 </div>
-   <!--end first section-->
-   <!--form start-->
- 
-       <div class="container">
-           <h4>Billing address</h4>
+</div>
            <!--names row-->
-           <form>
+           <div class="left">
+           <h4>Billing address</h4>
             <div class="row">
                 <div class="col">First name</div>
                 <div class="col">Last name</div>
@@ -67,12 +70,8 @@
                 <input type="text" class="form-control" placeholder="">
               </div>
             </div>
-          </form>
-</div>
 <!--end names row-->
-
 <!--user name-->
-<div class="container">
     <p>Username</p>
     <div class="input-group flex-nowrap">
         <div class="input-group-prepend">
@@ -80,31 +79,23 @@
         </div>
         <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
       </div>
-</div>
 <!--username end-->
 <!--email-->
-<div class="container">
 <div class="form-group">
     <label for="exampleInputEmail1">Email (Optional)</label>
     <input type="email" class="form-control" placeholder="you@example.com" id="exampleInputEmail1" aria-describedby="emailHelp">
 </div>
-</div>
 <!--email end-->
-<!--address start-->
-    <div class="container">
-       
+<!--address start-->  
+<div class="form-group">
             <label for="exampleInputEmail1">Address</label>
             <input type="address" class="form-control" placeholder="1234 Main St" id="exampleInputEmail1" aria-describedby="Help">
         </div>
-        </div>
-        <div class="container">
-            <div class="form-group">
+       <div class="form-group">
                 <label for="exampleInputEmail1">Address  2 (Optional)</label>
                 <input type="address" class="form-control" placeholder="Appartment or suite" id="exampleInputEmail1" aria-describedby="Help">
             </div>
-            </div>
             <!--address end-->
-            <div class="container">
                 <div class="row">
                    <div class="col-md-5 mb-3">
                      <label for="country">Country</label>
@@ -134,16 +125,17 @@
                      </div>
                    </div>
                  </div>
-               </div>
+ 
             <!--check box-->
-            <div class="container">
             <div class="form-check">
                 <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">&nbsp;&nbsp;Shipping address is the same as my billing address 
             </div>
               <div class="form-check">
                 <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">&nbsp;&nbsp;Save this information for next time
             </div>
-        <hr>
+            <br>
+            <hr>
+            <br>
         <h4>Payment</h4>
         <div class="form-check">
             <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">&nbsp;&nbsp;Credit card
@@ -154,15 +146,12 @@
           <div class="form-check">
             <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">&nbsp;&nbsp;Paypal
           </div>
-    </div>
-            <!--end check box-->
-            <div class="container" style="margin-top: 30px; margin-bottom: 10px;">
-                <form>
-                 <div class="row">
+  <!--end check box-->
+                 <div class="row" >
                      <div class="col">Name on card</div>
                      <div class="col">Credit card number</div>
                  </div><br>
-                 <div class="row">
+                 <div class="row" > 
                    <div class="col">
                      <input type="text" class="form-control" placeholder="">
                    </div>
@@ -171,56 +160,39 @@
                    </div>
                  </div>
                  <p>Full name as displayed on card</p>
-               </form>
-     </div>
-     <div class="container" style="margin-top: 30px; margin-bottom: 10px;">
-        <form>
-         <div class="row">
-             <div class="col-md-4">Expiration</div>
-             <div class="col-md-4">CVV</div>
-         </div><br>
-         <div class="row">
-           <div class="col-md-4">
-             <input type="text" class="form-control" placeholder="">
-           </div>
-           <div class="col-md-4">
-             <input type="text" class="form-control" placeholder="">
-           </div>
-         </div>
-       </form>
+                 <div class="row">
+                  <div class="col-md-3 mb-3">
+                    <label for="cc-expiration">Expiration</label>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Expiration date required
+                    </div>
+                  </div>
+                 <div class="col-md-3 mb-3">
+                  <label for="cc-expiration">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Security code required
+                  </div>
+                </div></div>
        <br>
 <hr>
 <br>
-</div>
             <!--last button-->
-            <div class="container">
             <button type="button" class="btn btn-primary btn-lg btn-block">Continue to Checkout</button>
-        </div>
-            <!--end last button-->
+           <!--end last button-->
+  
    <!--form end-->
-   <div class="card" style="width: 18rem;">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Cras justo odio</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Vestibulum at eros</li>
-      <li class="list-group-item">Cras justo odio</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      
-    </ul>
-  </div>
-  
    <!--footer-->
-   <footer>
-       <div class="container">
-           <center>
-    <p>© 2017-2018 Company Name</p>
-    <a href="">Privacy</a>
-    <a href=""> Terms</a>
-    <a href="">Support</a>
-</center>
+   <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017-2018 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
 </div>
-   </footer>
-  
    <!--end footer-->
     <script src="js/bootstrap.min.js"></script>
 </body>
